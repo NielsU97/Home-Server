@@ -2,7 +2,7 @@
   <h1 align="center">Home Smart Server</h1>
   <br>
  <h2 align="center">
-<img src="https://github.com/NielsU97/HomeSmartServer/www/Images/docker_setup.png" width="500">
+<img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/docker_setup.png" width="500">
   </br>
 </br>  
 <h2>	 
