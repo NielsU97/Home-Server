@@ -1,42 +1,89 @@
-# HomeSmartServer
-I have a Raspberry Pi that serves multiple purposes, including functioning as a VPN server, Smart Home, providing local network adblocking, and much more. <br> <br>
-
-I use Docker to run all these different applications. By using Docker, I can seamlessly manage and deploy various software components while ensuring their isolation and portability. Docker enables me to streamline the execution of these different applications, allowing for efficient resource utilization and simplified maintenance. <br> <br>
-
-Docker is an open-source platform that allows you to automate the deployment, scaling, and management of applications using containerization. It provides a lightweight, isolated environment called a container, which contains all the dependencies and libraries required for an application to run consistently across different systems. Docker simplifies the process of packaging software and its dependencies into standardized units, making it easier to deploy and run applications in various computing environments. <br> <br>
-
-## System Setup
+  <br>
+  <h1 align="center">Home Smart Server</h1>
+  <br>
+ <h2 align="center">
+<img src="https://github.com/NielsU97/HomeSmartServer/www/Images/docker-setup.png" width="500">
+  </br>
+</br>  
+<h2>	 
+<h3 align="center">Running Multiple Applications on a Raspberry Pi</h3>                                                                                                                                      
+<h2> System Setup </h2> 
 Hardware Raspberry Pi 4 - 8 GB <br>
 Operating System: Raspbian OS Lite 64-bit <br>
-Docker:
-  - Portainer
-  - Pi-Hole
-  - Home Assistant
-  - Cloudflare
-  - Homer
-  - Mosquitto MQTT
-  - Grafana
-  - Node-red
-  - Wireguard
+Docker: <br> 
+  - Portainer <br> 
+  - Pi-Hole <br> 
+  - Home Assistant <br> 
+  - Cloudflare <br> 
+  - Homer <br> 
+  - Mosquitto MQTT <br> 
+  - Grafana <br> 
+  - Node-red <br> 
+  - Wireguard <br> 
+  - ... <br> 
+</br>
+<h2> Get started </h2> 
 
-### Install Docker
-``curl -sSL https://get.docker.com | sh`` <br>
-``sudo usermod -aG docker $USER`` <br>
+`SSH` - Connect to your Pi using Secure Shell (Command prompt)
+```
+# Hostname or IP address
+ssh username@hostname
 
-You can check if docker is installed correctly <br>
-``docker version`` <br>
-``docker run hello-world`` <br>
+ssh username@192.xxx.x.xx
+```
+Or use PuTTY instead of command prompt. 
 
-### Install Portainer
-With Portainer you can manage you docker containers in a GUI instead of using the commandline <br>
-``sudo docker pull portainer/portainer-ce:latest`` <br>
-``sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest`` <br>
+`Command 1` - Check and Update your Pi
+```
+sudo apt-get update -y
+sudo apt-get upgrade -y
+```
 
-### Creating docker containers
-Using commandline: <br>
+</br>
+
+<h2> Install Docker </h2> 
+
+`Command 1` - Install Docker
+```
+curl -sSL https://get.docker.com | sh
+```
+
+`Command 2` - Add user to group Docker
+```
+sudo usermod -aG docker $USER
+```
+
+`Command 3` - You can check if docker is installed correctly
+```
+docker version
+docker run hello-world
+```
+</br>
+<h2> Install Portainer </h2> 
+With Portainer you can manage you docker containers in a GUI instead of using the commandline <br></br>
+
+`Command 1` - Pull portainer images
+```
+sudo docker pull portainer/portainer-ce:latest
+```
+
+`Command 2` - Run Portainer container
+```
+sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
+</br>
+<h2> Creating docker containers </h2> 
+
+`Option 1` - Using commandline: <br>
 Go to the directory where your docker-compose.yaml is located <br>
-``docker compose up`` <br>
+```
+docker compose up
+``` 
 
-Using portainer: <br>
+
+`Option 2` - Using portainer: <br>
 Stacks --> Add stack <br>
 Upload your docker-compose.yaml or copy code in Web Editor <br>
+<br>
+
+<h3 align="center">For the Docker Compose examples, navigate to the folder of the application you wish to install.</h3>
