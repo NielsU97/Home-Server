@@ -1,4 +1,9 @@
 # HomeSmartServer
+I have a Raspberry Pi that serves multiple purposes, including functioning as a VPN server, Smart Home, providing local network adblocking, and much more. <br> <br>
+
+I use Docker to run all these different applications. By using Docker, I can seamlessly manage and deploy various software components while ensuring their isolation and portability. Docker enables me to streamline the execution of these different applications, allowing for efficient resource utilization and simplified maintenance. <br> <br>
+
+Docker is an open-source platform that allows you to automate the deployment, scaling, and management of applications using containerization. It provides a lightweight, isolated environment called a container, which contains all the dependencies and libraries required for an application to run consistently across different systems. Docker simplifies the process of packaging software and its dependencies into standardized units, making it easier to deploy and run applications in various computing environments. <br> <br>
 
 ## System Setup
 Hardware Raspberry Pi 4 - 8 GB <br>
@@ -12,7 +17,7 @@ Docker:
   - Mosquitto MQTT
   - Grafana
   - Node-red
-  - Wirequard
+  - Wireguard
 
 ### Install Docker
 ``curl -sSL https://get.docker.com | sh`` <br>
