@@ -1,0 +1,11 @@
+version: "2"
+services:
+  homer:
+      image: b4bz/homer
+      network_mode: bridge
+      container_name: homer
+      volumes:
+        - /PATH/TO/YOUR/CONFIG:/www/assets
+      ports:
+        - 8080:8080
+      restart: unless-stopped

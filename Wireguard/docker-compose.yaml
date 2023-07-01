@@ -1,0 +1,24 @@
+version: "2.1"
+services:
+  wireguard:
+    image: linuxserver/wireguard:latest
+    container_name: wireguard
+    network_mode: bridge
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE #optional
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - SERVERURL=wireguard.domain.com #Duckdns url or Global IP address or ...
+      - SERVERPORT=51820
+      - PEERS=Laptop,Phone   
+      - PEERDNS=8.8.8.8 #optional: I use Pi-Hole IP for adblocking 
+    volumes:
+      - /wireguard:/config
+      - /lib/modules:/lib/modules #optional
+    ports:
+      - 51820:51820/udp
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    restart: unless-stopped

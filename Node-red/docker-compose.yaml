@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  node-red:
+    container_name: node-red
+    image: nodered/node-red:latest
+    network_mode: bridge
+    environment:
+      - TZ=Europe/Amsterdam
+    ports:
+      - "1880:1880"
+    volumes:
+      - data:/data
+    restart: unless-stopped
+
+volumes:
+  data:
