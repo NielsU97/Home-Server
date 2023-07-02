@@ -8,9 +8,10 @@
 <h2>	 
 <h3 align="center">Running Multiple Applications on a Raspberry Pi</h3>                                                                                                                                      
 <h2> System Setup </h2> 
-Hardware Raspberry Pi 4 - 8 GB <br>
+Hardware: Raspberry Pi 4 - 8 GB <br>
 Operating System: Raspbian OS Lite 64-bit <br>
-Docker: <br> 
+Docker with containerized applications: <br> 
+<ol>
   - Portainer <br> 
   - Pi-Hole <br> 
   - Home Assistant <br> 
@@ -21,12 +22,12 @@ Docker: <br>
   - Node-red <br> 
   - Wireguard <br> 
   - ... <br> 
+</ol>
 </br>
 <h2> Get started </h2> 
 
-`SSH` - Connect to your Pi using Secure Shell (Command prompt)
+`SSH` - Connect to your Pi using Secure Shell (Command prompt) with Hostname or IP address
 ```
-# Hostname or IP address
 ssh username@hostname
 
 ssh username@192.xxx.x.xx
@@ -53,7 +54,12 @@ curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker $USER
 ```
 
-`Command 3` - You can check if docker is installed correctly
+`Command 3` - Install Docker Compose Plugin
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```
+
+`Command 4` - You can check if docker is installed correctly
 ```
 docker version
 docker run hello-world
@@ -70,6 +76,12 @@ sudo docker pull portainer/portainer-ce:latest
 `Command 2` - Run Portainer container
 ```
 sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
+`Login` - Login Portainer
+</br>
+Go to your webbrowser and fill in your Raspberry Pi IP address or Hostname with the Port number.
+```
+http://192.xxx.x.xx:9000
 ```
 </br>
 <h2> Creating docker containers </h2> 
