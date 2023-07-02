@@ -43,7 +43,8 @@ http://Hostname/admin
 ``` 
 You can login with the password you created in the compose file.
 <br> 
-<img src=https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/pihole_login.png width="500"> 
+<br>
+<img src=https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/pihole_login.png width="300"> 
 <br> 
 <br>
 <h2> Using Pi-Hole  </h2> 
@@ -60,12 +61,14 @@ To block ads on your network, follow these steps:
 
 By configuring your router with your Raspberry Pi's IP address as the primary and secondary DNS, all DNS requests on your network will be routed through Pi-Hole. Once the changes are saved, ads should be blocked on all devices connected to your network.
 <br>
+<br>
 <img src=https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/pihole_router.png width="700"> 
 <br>
 <br>
 `Option 2` - Device 
 <br>
 Instead of ad-blocking network-wide, you can also set it separately on your devices, such as your phone.
+<br>
 <br>
 <img src=https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/pihole_device.png width="200"> 
 <br>
