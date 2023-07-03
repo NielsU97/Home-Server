@@ -3,7 +3,7 @@
   <h2 align="center">Docker Compose</h2>
   <br>
  <h2 align="center">
-<img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/mosquitto_logo.png" width="500">
+<img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/mosquitto_logo.png" width="200">
   </br>
 </br>  
 <h2>	
