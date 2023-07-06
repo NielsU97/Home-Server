@@ -92,10 +92,23 @@ Go to the directory where your docker-compose.yaml is located <br>
 docker compose up
 ``` 
 
-
 `Option 2` - Using portainer: <br>
 Stacks --> Add stack <br>
 Upload your docker-compose.yaml or copy code in Web Editor <br>
 <br>
 
 <h3 align="center">For the Docker Compose examples, navigate to the folder of the application you wish to install.</h3>
+</br>
+<h2> Remote acces your applications </h2> 
+
+`Option 1` - VPN <br>
+If you have installed WireGuard or another VPN, you can access your local network remotely, including your applications. <br>
+
+`Option 2` - DuckDNS <br>
+You can remote access your applications by port forwarding it through DuckDNS. <br>
+
+
+`Option 3` - Cloudflare <br>
+I use Cloudflare to remotely access my applications. It's more secure because it uses HTTPS instead of HTTP, and you don't have to worry about port forwarding. <br>
+https://www.youtube.com/watch?v=ZvIdFs3M5ic
+<br>
