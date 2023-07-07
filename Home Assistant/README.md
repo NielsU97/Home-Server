@@ -46,7 +46,7 @@ Here i used the same theme as the Mobile Dashboard, but added a side bar using t
 <br>
 <br>
 <h2 align="center">
-<img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/home_display.png" width="800">
+<img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/hass_home_display.png" width="800">
 </h2>	
 </br>
 <p><a href="https://github.com/NielsU97/HomeDisplay" target="_blank">Klik Here</a> if you want to know how i display the dashboard on a Raspberry Pi</p>
