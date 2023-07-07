@@ -37,6 +37,8 @@ Or use PuTTY instead of command prompt.
 `Command 1` - Check and Update your Pi
 ```
 sudo apt-get update -y
+```
+```
 sudo apt-get upgrade -y
 ```
 
@@ -79,7 +81,7 @@ sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/do
 ```
 `Login` - Login Portainer
 </br>
-Go to your webbrowser and fill in your Raspberry Pi IP address or Hostname with the Port number.
+Go to your webbrowser and fill in your Raspberry Pi IP address or Hostname with the Port number.<br></br>
 ```
 http://192.xxx.x.xx:9000
 ```
@@ -100,6 +102,7 @@ Upload your docker-compose.yaml or copy code in Web Editor <br>
 <h3 align="center">For the Docker Compose examples, navigate to the folder of the application you wish to install.</h3>
 </br>
 <h2> Remote acces your applications </h2> 
+Every option has its own pros and cons. Consider which option best suits your needs.<br><br>
 
 `Option 1` - VPN <br>
 If you have installed WireGuard or another VPN, you can access your local network remotely, including your applications. <br>

@@ -34,11 +34,20 @@ ghcr.io/home-assistant/home-assistant:stable
 ``` 
 <h2> Mobile App Dashboard Example</h2> 
 
-I used Leon's layout for creating the Dashboard: https://community.home-assistant.io/t/rounded-dashboard-guide/543043
+I used <a href="https://community.home-assistant.io/t/rounded-dashboard-guide/543043" target="_blank">Leon's layout</a> for creating the Dashboard.
 <br>
 <br>
 <h2 align="center">
 <img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/hass_mobile_display.png" width="800">
 </h2>	
 </br>
+<h2> Wall Dashboard Example</h2> 
+Here i used the same theme as the Mobile Dashboard, but added a side bar using the <a href="https://github.com/DBuit/sidebar-card" target="_blank">custom-sidebar</a>  template.
+<br>
+<br>
+<h2 align="center">
+<img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/home_display.png" width="800">
+</h2>	
+</br>
+<p><a href="https://github.com/NielsU97/HomeDisplay" target="_blank">Klik Here</a> if you want to know how i display the dashboard on a Raspberry Pi</p>
 <h2 align="center"> More information coming soon </h2> 
