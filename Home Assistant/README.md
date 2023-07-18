@@ -62,7 +62,7 @@ If you don't have MQTT installed on your Raspberry Pi,
 <br>
 <h3> Fan pre-set button</h3> 
 <h2 align="center">
-<img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/hass_fan_preset_button.mp4" width="300">
+<img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/hass_fan_preset_button.gif" width="300">
 </h2>	
 Install custom button-card in HACS.
 <br>
