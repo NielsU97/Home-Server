@@ -1,11 +1,11 @@
   <br>
   <h1 align="center">Home Server</h1>
   <br>
- <h2 align="center">
+ <p align="center">
 <img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/docker_setup.png" width="500">
   </br>
 </br>  
-<h2>	 
+<p>	 
 <h3 align="center">Running Multiple Applications on a Raspberry Pi using Docker</h3>                                                                                                                                      
 <h2> My System Setup </h2> 
 Hardware: Raspberry Pi 4 - 8 GB <br>
