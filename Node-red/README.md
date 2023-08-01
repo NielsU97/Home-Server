@@ -2,11 +2,11 @@
   <h1 align="center">Node-Red</h1>
   <h2 align="center">Docker Compose</h2>
   <br>
- <h2 align="center">
+ <p align="center">
 <img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/nodered_example.png" width="500">
   </br>
 </br>  
-<h2>	
+<p>	
 <h3 align="center">Wiring together hardware devices, APIs and online services in new and interesting ways</h3>                                                                                                                                        
 <h2> Compose file </h2> 
 Edit the compose file to your needs.
