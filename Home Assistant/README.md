@@ -1,11 +1,11 @@
   <br>
   <h1 align="center">Home Assistant</h1>
   <br>
- <h2 align="center">
+ <p align="center">
 <img src="https://github.com/NielsU97/HomeSmartServer/blob/main/www/Images/hass_logo.png" width="200">
   </br>
 </br>  
-<h2>	
+<p>	
 <h3 align="center">Smart Home</h3>                                                                                                                                        
 <h2> Install Home Assistant </h2> 
 <br>I did not install Home Assistant using Docker Compose. It is possible that Home Assistant cannot be installed via Docker Compose.
